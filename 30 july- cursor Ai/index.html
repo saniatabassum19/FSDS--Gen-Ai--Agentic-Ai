@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <header>
+                <h1><i class="fas fa-cloud-sun"></i> Weather App</h1>
+                <div class="search-container">
+                    <input type="text" id="city-input" placeholder="Enter city name..." />
+                    <button id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </header>
+
+            <main>
+                <div class="weather-info" id="weather-info">
+                    <div class="welcome-message">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h2>Welcome to Weather App</h2>
+                        <p>Enter a city name to get current weather information</p>
+                    </div>
+                </div>
+
+                <div class="forecast-container" id="forecast-container">
+                    <!-- Forecast cards will be added here -->
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Loading weather data...</p>
+                </div>
+
+                <div class="error" id="error">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p id="error-message">City not found. Please try again.</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
